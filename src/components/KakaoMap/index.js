@@ -1,5 +1,6 @@
 /*global kakao*/
 import React, { Component } from "react";
+import HeaderCard from 'components/Cards/HeaderCard/index';
 
 class KakaoMap extends Component {
 
@@ -17,7 +18,7 @@ class KakaoMap extends Component {
         }
 
         console.log("============= KakaoMap constructor end ==============");
-    }
+}
 
     componentWillMount =  () => {
         console.log("============= KakaoMap componentWillMount start ==============");
@@ -57,7 +58,9 @@ class KakaoMap extends Component {
         console.log("===============================================");
 
         return (
-            <div className="App" id="map" style={{ width:'100%', height:'100%' }}></div>             
+            <div style={{ width:'100%', height:'100%', position:'relative', overflow:'hidden' }}>
+                <div className="App" id="map" style={{ width:'100%', height:'100%', position:'relative' }}></div>             
+            </div>
         );
     }
 }
