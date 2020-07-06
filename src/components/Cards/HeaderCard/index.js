@@ -8,16 +8,18 @@ const HeaderCard = () => {
   return (
     <Card className="shadow border-0">
       <CardHeader>
-        <div>
+        <span>
           <Input
-            placeholder="Placeholder"
+            placeholder="주소를 입력해주세요"
             inputProps={{
-              'aria-label': 'Description',
+              'aria-label': 'address',
             }}
             className="col-md-9 col-12"
           />
+        </span>
+        <span style={{ marginLeft:'10px' }}>
           <Search/>
-        </div>
+        </span>
       </CardHeader>
       <CardBody>
       </CardBody>
